@@ -24,3 +24,5 @@ jobs:
         uses: actions/checkout@v2
       - name: echo
         run: echo 'hello world'
+      - name: set
+        run: set
