@@ -8,7 +8,8 @@ on:
             required: true
             default: 'warning'
          tags:
-            description: 'Test scenario tags'
+            description: 'dev, staging, prod'
+            default: 'prod'
 
 
 jobs:
@@ -28,4 +29,4 @@ jobs:
         run: set
         env:
           logLevel: ${{ github.event.inputs.logLevel }}
-          tags: ${{ github.event.input.logLevel }}
+          tags: ${{ github.event.input.tags }}
