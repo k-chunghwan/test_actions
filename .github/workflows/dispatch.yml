@@ -26,3 +26,6 @@ jobs:
         run: echo 'hello world'
       - name: set
         run: set
+        env:
+          logLevel: ${{ github.event.inputs.logLevel }}
+          tags: ${{ github.event.input.logLevel }}
